@@ -4,6 +4,7 @@
 <head>
     <link href="style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/vvc0gnk.css">
+    <script src="./scripts/script.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,9 @@
             <p id="description">Cras non lectus ut eros lobortis suscipit in non nisi. Curabitur efficitur neque at
                 sollicitudin semper.</p>
             <!-- zazwyczaj tego typu buttony nazywamy CTA czyli call to actiom -->
-            <button id="CTA">Try it out</button>
+            <nav>
+                <a href="#formContainer"><button id="CTA">Try it out</button></a>
+            </nav>
         </div>
         <!-- id mogloby nazywac sie links -->
         <div id="links">
@@ -46,7 +49,7 @@
             <!-- poczytaj sobie o atrybucie action dla Form tagu -->
             <form action="/index.html">
 
-               
+
                 <input id="email" class="inputBasicStyle" type="text" placeholder="Email" autocomplete="off" required />
                 <input id="username" class="inputBasicStyle" type="text" placeholder="Username" required />
                 <input id="password" class="inputBasicStyle" name="password" type="password" required
@@ -62,7 +65,7 @@
                     </p>
                 </div>
                 <!-- formularz zawsze musi miec input o typie submit zeby mozna bylo go wyslac, nie moze on byc poza tagiem form -->
-                <input text="Sign up" type="submit" id="sign" value="Sign up"/>
+                <input text="Sign up" type="submit" id="sign" value="Sign up" />
             </form>
 
 

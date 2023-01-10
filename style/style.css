@@ -1,8 +1,12 @@
+ html{
+    scroll-behavior: smooth;
+ }
  body {
      display: flex;
      font-family: roboto, sans-serif;
      margin: 0;
      min-height: 900px;
+     scroll-behavior: smooth;
  }
 
  #first {
@@ -88,6 +92,7 @@
      box-shadow: -4px 0px 74px 0px rgba(242, 243, 253, 1);
 
  }
+
 
  #links {
      display: flex;
@@ -259,3 +264,144 @@
  #signInCTA a:hover {
      color: yellow;
  }
+
+
+ @media screen and (max-width: 1175px) {
+     body {
+         flex-direction: column;
+         background: auto;
+
+     }
+
+
+     #first {
+         width: auto;
+         height: 100vh
+     }
+
+     #logoAndIcons {
+         flex-direction: column;
+     }
+
+     #logo {
+         font-size: 45px;
+     }
+
+
+     #icons img {
+         margin-left: 67px;
+         width: 50px;
+         height: 49px;
+
+     }
+
+     h1,
+     #description {
+         max-width: initial;
+
+     }
+
+     h1 {
+         font-size: 70px;
+         line-height: initial;
+     }
+
+     #description {
+         font-size: 50px;
+     }
+
+     #CTA {
+         padding: 60px 150px;
+         border-radius: 70px;
+         font-size: 40px
+     }
+
+     #links a {
+         font-size: 30px;
+     }
+
+     #second {
+         flex-direction: column;
+         width: auto;
+         height: 100vh;
+         flex-wrap: wrap;
+     }
+
+     #containerForRectangleAndHeading {
+         margin-left: initial;
+     }
+
+     #rectangle {
+         width: 150px;
+         height: 12px;
+     }
+
+     h2 {
+         font-size: 60px;
+         width: 100%;
+         margin-right: 15px;
+     }
+
+
+     #descriptionTwo {
+         font-size: 45px;
+         max-width: 100%;
+         margin-right: 15px
+     }
+
+     form input {
+         width: 624px;
+         height: 100px;
+         margin-top: 24px
+     }
+
+     form input #email {
+         margin-top: 37px;
+        -webkit-text-fill-color: none;
+     }
+
+     .inputBasicStyle {
+         padding-left: 65px;
+         background-size: 20px;
+         background-position: 12px;
+         font-size: 45px;
+         color: #FFFF;
+     }
+
+     #email,
+     #username,
+     #password {
+         background-size: 60px;
+         width: 120%;
+         margin-left: -148px;
+
+     }
+
+     #termsOfServiceContainer {
+         margin-left: -148px;
+
+     }
+
+     #termsOfServiceCheckbox {
+         height: 33px;
+         width: 33px;
+
+     }
+
+     #termsOfServiceDescription {
+         font-size: 35px;
+         max-width: 600px;
+     }
+
+     #sign {
+         font-size: 60px;
+         border-radius: 50px;
+         margin-top: 56px;
+         margin-left: -148px;
+         padding: 50px 100px 101px;
+     }
+     #signInCTA{
+        font-size: 35px;
+        margin-right: 150px;
+     }
+    }
