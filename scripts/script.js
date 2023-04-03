@@ -4,12 +4,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const password = document.querySelector("#password");
     const form = document.querySelector("form");
 
-    // var p = document.createElement("p");
-    // p.style.color = "white"
-    // p.style.fontSize = '50px'
-    // p.innerText = 'duoa'
-    // email.insertAdjacentElement('afterend', p)
-
     const special = ["`", "!", "@", "#", "$", "^", "&", "*"];
 
     function checkIfOneChar(password) {
@@ -47,25 +41,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
         } else {
             console.log("Provide a valid e-mail address");
         }
-    
 
-        if(document.querySelector('#email-validation-message') === null){
+
+        if (document.querySelector('#email-validation-message') === null) {
             const paragraphAfterEmail = document.createElement("p")
             paragraphAfterEmail.innerText = "Provide a valid e-mail address"
             email.insertAdjacentElement("afterend", paragraphAfterEmail)
             paragraphAfterEmail.setAttribute("id", "email-validation-message")
-            
-        }
-       
 
-       
+        }
+
+
+
 
         if (username.value.length >= 3) {
             console.log("Ok");
         } else {
             console.log("Username must be longer than two characters");
         }
-        
+
 
 
 
