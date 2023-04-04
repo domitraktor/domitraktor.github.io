@@ -265,10 +265,11 @@
      color: yellow;
  }
 
- #email-validation-message{
+ #email-validation-message, #username-validation{
      color: red;
-     font-size : 30px;
+     font-size : 15px;
      margin-top : 10px;
+     margin-bottom: 0px;
  }
 
  @media screen and (max-width: 1175px) {
@@ -328,7 +329,6 @@
      #second {
          flex-direction: column;
          width: auto;
-         height: 100vh;
          flex-wrap: wrap;
      }
 
@@ -409,4 +409,11 @@
         font-size: 35px;
         margin-right: 150px;
      }
+     #email-validation-message, #username-validation{
+     color: red;
+     font-size : 30px;
+     margin-top: 10px;
+     margin-left: -135px;
+   
+ }
     }
