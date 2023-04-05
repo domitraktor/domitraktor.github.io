@@ -1,6 +1,7 @@
- html{
-    scroll-behavior: smooth;
+ html {
+     scroll-behavior: smooth;
  }
+
  body {
      display: flex;
      font-family: roboto, sans-serif;
@@ -265,12 +266,25 @@
      color: yellow;
  }
 
- #email-validation-message, #username-validation{
+ #email-validation-message,
+ #username-validation {
      color: red;
-     font-size : 15px;
-     margin-top : 10px;
+     font-size: 15px;
+     margin-top: 10px;
      margin-bottom: 0px;
  }
+
+ #password-validation, #passwordLength-validation,#passwordUpperCase-validation {
+     color: red;
+     font-size: 15px;
+     margin-top: 10px;
+     margin-bottom: 0px;
+     margin-left: 20px;
+     display: list-item;
+     list-style: disc;
+     
+ }
+
 
  @media screen and (max-width: 1175px) {
      body {
@@ -282,7 +296,7 @@
 
      #first {
          width: auto;
-         height: 100vh
+        
      }
 
      #logoAndIcons {
@@ -362,7 +376,7 @@
 
      form input #email {
          margin-top: 37px;
-        -webkit-text-fill-color: none;
+         -webkit-text-fill-color: none;
      }
 
      .inputBasicStyle {
@@ -405,15 +419,30 @@
          margin-left: -148px;
          padding: 50px 100px 101px;
      }
-     #signInCTA{
-        font-size: 35px;
-        margin-right: 150px;
+
+     #signInCTA {
+         font-size: 35px;
+         margin-right: 150px;
      }
-     #email-validation-message, #username-validation{
-     color: red;
-     font-size : 30px;
-     margin-top: 10px;
-     margin-left: -135px;
-   
+
+     #email-validation-message,
+     #username-validation {
+         color: red;
+         font-size: 30px;
+         margin-top: 10px;
+         margin-left: -135px;
+
+     }
+          #password-validation,
+          #passwordLength-validation,
+          #passwordUpperCase-validation {
+              color: red;
+              font-size: 30px;
+              margin-top: 10px;
+              margin-bottom: 0px;
+              margin-left: 20px;
+              display: list-item;
+              list-style: disc;
+    
+          }
  }
-    }
