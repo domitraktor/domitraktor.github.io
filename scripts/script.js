@@ -1,14 +1,8 @@
 const special = ["`", "!", "@", "#", "$", "^", "&", "*"]
 const monkey = "@"
 
-function checkIfOneChar(password) {
-    let isOneCharPresent = false
-    special.forEach((char) => {
-        if (password.includes(char)) {
-            isOneCharPresent = true
-        }
-    })
-    return isOneCharPresent
+function checkIfSpecialSign(password) {
+    return special.some((char) => password.includes(char))
 }
 
 function isUpperCase(myString) {
@@ -38,17 +32,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
         //1. emailValidation
         //2. usernameValidation
         //3. passwordValidation
-        const emailWithMonkeyExists =
-            document.querySelector("#email-validation-message") !== null
-        if (emailWithMonkeyExists) {
-            document.querySelector("#email-validation-message").remove()
-        }
         if (email.value.includes(monkey)) {
-            console.log("Ok")
-
-            //tutaj mozna usuwac wczesniejszy komunikat o blednym
+            console.log("Ok malpa")
+            const emailWithMonkeyExists =
+                document.querySelector("#email-validation-message") !== null
+            if (emailWithMonkeyExists) {
+                document.querySelector("#email-validation-message").remove()
+            }
         } else {
             if (document.querySelector("#email-validation-message") === null) {
+                console.log("email zy")
                 const paragraphAfterEmail = document.createElement("p")
                 paragraphAfterEmail.innerText = "Provide a valid e-mail address"
                 email.insertAdjacentElement("afterend", paragraphAfterEmail)
@@ -61,6 +54,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (username.value.length >= 3) {
             console.log("Ok")
+            const userNameLongerThanThreeExists =
+                document.querySelector("#username-validation") !== null
+            if (userNameLongerThanThreeExists) {
+                document.querySelector("#username-validation").remove()
+            }
         } else {
             console.log("Username must be longer than two characters")
             if (document.querySelector("#username-validation") === null) {
@@ -80,29 +78,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         }
 
-        const passwordUpperCaseValidationExists =
-            document.querySelector("#passwordUpperCase-validation") !== null
+        if (checkIfSpecialSign(password.value)) {
+            console.log("Okejka sdfs")
 
-        if (passwordUpperCaseValidationExists) {
-            document.querySelector("#passwordUpperCase-validation").remove()
-        }
+            const passwordWithOneSpecialCharExists =
+                document.querySelector("#password-validation") !== null
 
-        const passwordWithOneSpecialCharExists =
-            document.querySelector("#password-validation") !== null
-
-        if (passwordWithOneSpecialCharExists) {
-            document.querySelector("#passwordUpperCase-validation").remove()
-        }
-
-        const passwordWithEigthCharExists =
-            document.querySelector("#passwordLength-validation") !== null
-
-        if (passwordWithEigthCharExists) {
-            document.querySelector("#passwordLength-validation").remove()
-        }
-
-        if (checkIfOneChar(password.value)) {
-            console.log("Okejka")
+            if (passwordWithOneSpecialCharExists) {
+                document.querySelector("#password-validation").remove()
+            }
         } else {
             console.log("źle")
             if (document.querySelector("#password-validation") === null) {
@@ -122,6 +106,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (password.value.length >= 8) {
             console.log("Okejka")
+            const passwordWithEigthCharExists =
+                document.querySelector("#passwordLength-validation") !== null
+
+            if (passwordWithEigthCharExists) {
+                document.querySelector("#passwordLength-validation").remove()
+            }
         } else {
             console.log("Wpisz min. osiem znaków")
             if (document.querySelector("#passwordLength-validation") === null) {
@@ -135,6 +125,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (checkIfUpperCase(password.value)) {
             console.log("okejka")
+
+            const passwordUpperCaseValidationExists =
+                document.querySelector("#passwordUpperCase-validation") !== null
+
+            if (passwordUpperCaseValidationExists) {
+                document.querySelector("#passwordUpperCase-validation").remove()
+            }
         } else {
             console.log("Wpisz min.jedną dużą literę")
             if (
