@@ -1,24 +1,5 @@
-const special = ["`", "!", "@", "#", "$", "^", "&", "*"]
-const monkey = "@"
-
-function checkIfSpecialSign(password) {
-    return special.some((char) => password.includes(char))
-}
-
-function isUpperCase(myString) {
-    return /[A-Z]/.test(myString)
-}
-function checkIfUpperCase(passedPassword) {
-    let isOneUpperCased = false
-
-    passedPassword.split("").forEach((letter) => {
-        if (isUpperCase(letter) == true) {
-            isOneUpperCased = true
-        }
-    })
-
-    return isOneUpperCased
-}
+import { monkey } from "./constants.js"
+import { checkIfSpecialSign, checkIfUpperCase } from "./helpers.js"
 
 document.addEventListener("DOMContentLoaded", function (event) {
     const email = document.querySelector("#email")

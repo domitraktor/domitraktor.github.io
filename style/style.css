@@ -6,7 +6,7 @@
      display: flex;
      font-family: roboto, sans-serif;
      margin: 0;
-     min-height: 900px;
+     /* (!!!)  min-height: 1016px; */
      scroll-behavior: smooth;
  }
 
@@ -274,7 +274,9 @@
      margin-bottom: 0px;
  }
 
- #password-validation, #passwordLength-validation,#passwordUpperCase-validation {
+ #password-validation,
+ #passwordLength-validation,
+ #passwordUpperCase-validation {
      color: red;
      font-size: 15px;
      margin-top: 10px;
@@ -282,7 +284,7 @@
      margin-left: 20px;
      display: list-item;
      list-style: disc;
-     
+
  }
 
 
@@ -296,7 +298,7 @@
 
      #first {
          width: auto;
-        
+
      }
 
      #logoAndIcons {
@@ -433,16 +435,17 @@
          margin-left: -135px;
 
      }
-          #password-validation,
-          #passwordLength-validation,
-          #passwordUpperCase-validation {
-              color: red;
-              font-size: 30px;
-              margin-top: 10px;
-              margin-bottom: 0px;
-              margin-left: 20px;
-              display: list-item;
-              list-style: disc;
-    
-          }
+
+     #password-validation,
+     #passwordLength-validation,
+     #passwordUpperCase-validation {
+         color: red;
+         font-size: 30px;
+         margin-top: 10px;
+         margin-bottom: 0px;
+         margin-left: 20px;
+         display: list-item;
+         list-style: disc;
+
+     }
  }
