@@ -6,7 +6,7 @@ function checkIfSpecialSign(password) {
 }
 
 function isUpperCase(myString) {
-    return myString == myString.toUpperCase()
+    return /[A-Z]/.test(myString)
 }
 function checkIfUpperCase(passedPassword) {
     let isOneUpperCased = false
@@ -80,10 +80,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (checkIfSpecialSign(password.value)) {
             console.log("Okejka sdfs")
-
             const passwordWithOneSpecialCharExists =
                 document.querySelector("#password-validation") !== null
-
             if (passwordWithOneSpecialCharExists) {
                 document.querySelector("#password-validation").remove()
             }
