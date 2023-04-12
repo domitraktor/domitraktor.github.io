@@ -6,7 +6,6 @@
      display: flex;
      font-family: roboto, sans-serif;
      margin: 0;
-     /* (!!!)  min-height: 1016px; */
      scroll-behavior: smooth;
  }
 
@@ -17,6 +16,7 @@
      justify-content: space-between;
      width: 56%;
      padding: 44px 26px;
+     height: fit-content;
 
      background: linear-gradient(112.81deg, rgba(44, 13, 235, 0.74) 23.71%, rgba(255, 199, 0, 0.92) 100%),
          url('../images/png/backgroundimage.png') no-repeat center center fixed;
@@ -252,7 +252,7 @@
 
  #signInCTA {
      color: #FFFF;
-     /* margin-top: 40px; */
+
 
  }
 
@@ -370,6 +370,10 @@
          margin-right: 15px
      }
 
+     form {
+         width: 100%;
+     }
+
      form input {
          width: 624px;
          height: 100px;
@@ -393,15 +397,11 @@
      #username,
      #password {
          background-size: 60px;
-         width: 120%;
-         margin-left: -148px;
+         width: 90%;
+
 
      }
 
-     #termsOfServiceContainer {
-         margin-left: -148px;
-
-     }
 
      #termsOfServiceCheckbox {
          height: 33px;
@@ -411,14 +411,14 @@
 
      #termsOfServiceDescription {
          font-size: 35px;
-         max-width: 600px;
+         margin-top: 20px;
      }
 
      #sign {
          font-size: 60px;
          border-radius: 50px;
          margin-top: 56px;
-         margin-left: -148px;
+
          padding: 50px 100px 101px;
      }
 
@@ -432,7 +432,6 @@
          color: red;
          font-size: 30px;
          margin-top: 10px;
-         margin-left: -135px;
 
      }
 
