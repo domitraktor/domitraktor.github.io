@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const username = document.querySelector("#username")
     const password = document.querySelector("#password")
     const form = document.querySelector("form")
+    const termsOfServiceCheckbox = document.querySelector(
+        "#termsOfServiceCheckbox"
+    )
 
     form.addEventListener("submit", (event) => {
         event.preventDefault()
@@ -20,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             if (emailWithMonkeyExists) {
                 document.querySelector("#email-validation-message").remove()
             }
+            email.classList.remove("validation-error")
         } else {
             if (document.querySelector("#email-validation-message") === null) {
                 console.log("email zy")
@@ -30,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     "id",
                     "email-validation-message"
                 )
+
+                email.classList.add("validation-error")
             }
         }
 
@@ -39,8 +45,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 document.querySelector("#username-validation") !== null
             if (userNameLongerThanThreeExists) {
                 document.querySelector("#username-validation").remove()
+                username.classList.remove("validation-error")
             }
         } else {
+            username.classList.add("validation-error")
             console.log("Username must be longer than two characters")
             if (document.querySelector("#username-validation") === null) {
                 if (username.value.length < 3) {
@@ -59,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         }
 
+        let numberOfErrorsForPassword = 0
+
         if (checkIfSpecialSign(password.value)) {
             console.log("Okejka sdfs")
             const passwordWithOneSpecialCharExists =
@@ -67,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 document.querySelector("#password-validation").remove()
             }
         } else {
+            numberOfErrorsForPassword++
             console.log("źle")
             if (document.querySelector("#password-validation") === null) {
                 const passwordWithSpecialChar = document.createElement("p")
@@ -92,6 +103,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 document.querySelector("#passwordLength-validation").remove()
             }
         } else {
+            numberOfErrorsForPassword++
+
             console.log("Wpisz min. osiem znaków")
             if (document.querySelector("#passwordLength-validation") === null) {
                 const passwordLength = document.createElement("p")
@@ -112,6 +125,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 document.querySelector("#passwordUpperCase-validation").remove()
             }
         } else {
+            numberOfErrorsForPassword++
             console.log("Wpisz min.jedną dużą literę")
             if (
                 document.querySelector("#passwordUpperCase-validation") === null
@@ -125,6 +139,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
                     "passwordUpperCase-validation"
                 )
             }
+        }
+
+        if (numberOfErrorsForPassword === 0) {
+            password.classList.remove("validation-error")
+        } else {
+            password.classList.add("validation-error")
+        }
+
+        if (termsOfServiceCheckbox.checked) {
+            console.log("ok")
+        } else {
+            console.log("Trzeba zatwierdzić")
         }
     })
 })

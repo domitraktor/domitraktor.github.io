@@ -1,450 +1,463 @@
- html {
-     scroll-behavior: smooth;
- }
-
- body {
-     display: flex;
-     font-family: roboto, sans-serif;
-     margin: 0;
-     scroll-behavior: smooth;
- }
-
- #first {
-
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     width: 56%;
-     padding: 44px 26px;
-     height: fit-content;
-
-     background: linear-gradient(112.81deg, rgba(44, 13, 235, 0.74) 23.71%, rgba(255, 199, 0, 0.92) 100%),
-         url('../images/png/backgroundimage.png') no-repeat center center fixed;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-
-
- }
-
- #logoAndIcons {
-     display: flex;
-     justify-content: space-between;
-
- }
+form-input {
+    all: unset;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    font-family: roboto, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+#first {
+
+    display: flex;
+    flex-direction: column;
+    width: 56%;
+    padding: 44px 26px;
+    height: fit-content;
+
+    background: linear-gradient(112.81deg, rgba(44, 13, 235, 0.74) 23.71%, rgba(255, 199, 0, 0.92) 100%),
+        url('../images/png/backgroundimage.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
 
- #icons img {
-     margin-left: 35px;
-     width: 23.49px;
-     height: 21.87px;
-     margin-top: 44px;
- }
-
-
- #logo {
-     font-style: italic;
-     font-weight: 600;
-     font-size: 24px;
-     line-height: 28px;
-     color: white;
-     margin: 0px;
-     margin-top: 44px;
-     margin-left: 67px;
-
-
- }
-
- #containerForLoremOut {
-     margin-left: 67px;
- }
-
-
- h1 {
-     color: #FFFF;
-     font-size: 34px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: 40px;
-     max-width: 454px;
-     margin: 152px 0 0 0;
- }
-
- #description {
-     color: #FFFF;
-     font-size: 16px;
-     font-style: normal;
-     max-width: 320px;
-     margin-bottom: 25px 0 0 0;
- }
-
- #CTA {
-     background: black;
-     color: #FFFF;
-     border-radius: 20px;
-     font-size: 18px;
-     padding: 20px 55px;
-     margin-top: 58px;
-     border: none;
- }
-
- #CTA:hover {
-     background: linear-gradient(112.81deg, rgba(44, 13, 235, 0.74) 23.71%, rgba(255, 199, 0, 0.92) 100%);
-     box-shadow: -4px 0px 74px 0px rgba(242, 243, 253, 1);
-
- }
-
+#logoAndIcons {
+    display: flex;
+    justify-content: space-between;
 
- #links {
-     display: flex;
-     justify-content: space-evenly;
-     margin-top: 280px;
+}
 
- }
+#icons img {
+    margin-left: 35px;
+    width: 23.49px;
+    height: 21.87px;
+    margin-top: 44px;
+}
+
+
+#logo {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    margin: 0px;
+    margin-top: 44px;
+    margin-left: 67px;
+
+
+}
+
+#containerForLoremOut {
+    margin-left: 67px;
+}
+
+
+h1 {
+    color: #FFFF;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    max-width: 454px;
+    margin: 152px 0 0 0;
+}
+
+#description {
+    color: #FFFF;
+    font-size: 16px;
+    font-style: normal;
+    max-width: 320px;
+    margin-bottom: 25px 0 0 0;
+}
+
+#CTA {
+    background: black;
+    color: #FFFF;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 20px 55px;
+    margin-top: 58px;
+    border: none;
+}
+
+#CTA:hover {
+    background: linear-gradient(112.81deg, rgba(44, 13, 235, 0.74) 23.71%, rgba(255, 199, 0, 0.92) 100%);
+    box-shadow: -4px 0px 74px 0px rgba(242, 243, 253, 1);
 
- #links a:hover {
-     color: #120557;
+}
+
 
- }
+#links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 280px;
 
- #links a {
-     color: #FFFF;
-     text-decoration: none;
- }
+}
 
+#links a:hover {
+    color: #120557;
 
- #second {
-     background-color: #171136;
-     width: 44%;
+}
 
- }
+#links a {
+    color: #FFFF;
+    text-decoration: none;
+}
 
- #formContainer {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin-left: 51px;
 
+#second {
+    background-color: #171136;
+    width: 44%;
 
- }
+}
 
- #containerForRectangleAndHeading {
-     display: flex;
-     flex-direction: column;
- }
+#formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 51px;
 
- #rectangle {
-     display: block;
-     width: 52px;
-     height: 6px;
-     background: #F0C123;
-     margin-top: 127px;
- }
 
+}
 
- h2 {
-     color: #FFFF;
-     width: 423px;
-     margin-top: 25px;
- }
+#containerForRectangleAndHeading {
+    display: flex;
+    flex-direction: column;
+}
 
- #descriptionTwo {
-     color: rgba(255, 255, 255, 0.5);
-     padding-top: 18px;
-     margin-top: 18px;
-     max-width: 423px;
-     font-size: 16px;
-     font-weight: 400;
- }
+#rectangle {
+    display: block;
+    width: 52px;
+    height: 6px;
+    background: #F0C123;
+    margin-top: 127px;
+}
 
- form {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
 
- }
+h2 {
+    color: #FFFF;
+    width: 423px;
+    margin-top: 25px;
+}
 
- form input {
-     background: #261C5F;
-     border: 1px solid #6952EE;
-     width: 423px;
-     height: 48px;
-     margin-top: 24px
- }
+#descriptionTwo {
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 18px;
+    margin-top: 18px;
+    max-width: 423px;
+    font-size: 16px;
+    font-weight: 400;
+}
 
- form input #email {
-     margin-top: 37px;
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
- }
+}
 
+form input {
+    background: #261C5F;
+    border: 1px solid #6952EE;
+    width: 423px;
+    height: 48px;
+    margin-top: 24px
+}
 
+form input #email {
+    margin-top: 37px;
 
+}
 
- .inputBasicStyle {
-     padding-left: 35px;
-     background-size: 20px;
-     background-position: 12px;
-     font-size: 16px;
-     color: #FFFF;
- }
 
- #email {
 
-     background: url("../images/svg/list.svg") no-repeat left;
-     -webkit-text-fill-color: none;
- }
 
+.inputBasicStyle {
+    padding-left: 35px;
+    background-size: 20px;
+    background-position: 12px;
+    font-size: 16px;
+    color: #FFFF;
+}
 
- #username {
+#email {
 
-     background: url("../images/svg/ludek.svg") no-repeat left;
- }
+    background: url("../images/svg/list.svg") no-repeat left;
+    -webkit-text-fill-color: none;
+}
 
- #password {
-     background: url("../images/svg/Lock.svg") no-repeat left;
 
- }
+#username {
 
- #termsOfServiceContainer {
-     display: flex;
- }
+    background: url("../images/svg/ludek.svg") no-repeat left;
+}
 
+#password {
+    background: url("../images/svg/Lock.svg") no-repeat left;
 
- #termsOfServiceDescription {
-     color: rgba(255, 255, 255, 0.5);
-     max-width: 392px;
+}
 
- }
+#termsOfServiceContainer {
+    display: flex;
+}
 
- #termsOfServiceCheckbox {
-     width: 19px;
-     height: 20px;
-     background: #261C5F;
-     border-radius: 7px;
-     border: 1px solid #6952EE;
-     margin-right: 12px;
-     margin-top: 24px;
- }
 
+#termsOfServiceDescription {
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 392px;
 
- a {
-     color: #FFFF;
-     text-decoration: none;
- }
+}
 
+#termsOfServiceCheckbox {
+    width: 19px;
+    height: 20px;
+    background: #261C5F;
+    border-radius: 7px;
+    border: 1px solid #6952EE;
+    margin-right: 12px;
+    margin-top: 24px;
+}
 
- #sign {
-     color: #FFFF;
-     font-size: 18px;
-     background: #E34693;
-     border: none;
-     border-radius: 20px;
-     margin-top: 56px;
-     padding: 35px 140px;
 
- }
+a {
+    color: #FFFF;
+    text-decoration: none;
+}
 
 
- #sign:hover {
-     background: linear-gradient(112.81deg, rgba(44, 13, 235, 0.74) 23.71%, rgba(255, 199, 0, 0.92) 100%);
-     box-shadow: -4px 0px 74px 0px rgba(242, 243, 253, 1);
- }
+#sign {
+    color: #FFFF;
+    font-size: 18px;
+    background: #E34693;
+    border: none;
+    border-radius: 20px;
+    margin-top: 56px;
+    padding: 35px 140px;
 
- #signInCTA {
-     color: #FFFF;
+}
 
 
- }
+#sign:hover {
+    background: linear-gradient(112.81deg, rgba(44, 13, 235, 0.74) 23.71%, rgba(255, 199, 0, 0.92) 100%);
+    box-shadow: -4px 0px 74px 0px rgba(242, 243, 253, 1);
+}
 
+#signInCTA {
+    color: #FFFF;
 
 
- #signInCTA a {
-     color: #E34693;
- }
+}
 
- #signInCTA a:hover {
-     color: yellow;
- }
 
- #email-validation-message,
- #username-validation {
-     color: red;
-     font-size: 15px;
-     margin-top: 10px;
-     margin-bottom: 0px;
- }
 
- #password-validation,
- #passwordLength-validation,
- #passwordUpperCase-validation {
-     color: red;
-     font-size: 15px;
-     margin-top: 10px;
-     margin-bottom: 0px;
-     margin-left: 20px;
-     display: list-item;
-     list-style: disc;
+#signInCTA a {
+    color: #E34693;
+}
 
- }
+#signInCTA a:hover {
+    color: yellow;
+}
 
+#email-validation-message,
+#username-validation {
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
- @media screen and (max-width: 1175px) {
-     body {
-         flex-direction: column;
-         background: auto;
+#password-validation,
+#passwordLength-validation,
+#passwordUpperCase-validation {
+    color: red;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    display: list-item;
+    list-style: disc;
 
-     }
+}
 
+.validation-error {
+    border-color: red;
 
-     #first {
-         width: auto;
+}
 
-     }
 
-     #logoAndIcons {
-         flex-direction: column;
-     }
 
-     #logo {
-         font-size: 45px;
-     }
+@media screen and (max-width: 1175px) {
+    body {
+        flex-direction: column;
+        background: auto;
 
+    }
 
-     #icons img {
-         margin-left: 67px;
-         width: 50px;
-         height: 49px;
 
-     }
+    #first {
+        width: auto;
 
-     h1,
-     #description {
-         max-width: initial;
+    }
 
-     }
+    #logoAndIcons {
+        flex-direction: column;
+    }
 
-     h1 {
-         font-size: 70px;
-         line-height: initial;
-     }
+    #logo {
+        font-size: 45px;
+    }
 
-     #description {
-         font-size: 50px;
-     }
 
-     #CTA {
-         padding: 60px 150px;
-         border-radius: 70px;
-         font-size: 40px
-     }
+    #icons img {
+        margin-left: 67px;
+        width: 50px;
+        height: 49px;
 
-     #links a {
-         font-size: 30px;
-     }
+    }
 
-     #second {
-         flex-direction: column;
-         width: auto;
-         flex-wrap: wrap;
-     }
+    h1,
+    #description {
+        max-width: initial;
 
-     #containerForRectangleAndHeading {
-         margin-left: initial;
-     }
+    }
 
-     #rectangle {
-         width: 150px;
-         height: 12px;
-     }
+    h1 {
+        font-size: 70px;
+        line-height: initial;
+    }
 
-     h2 {
-         font-size: 60px;
-         width: 100%;
-         margin-right: 15px;
-     }
+    #description {
+        font-size: 50px;
+    }
 
+    #CTA {
+        padding: 60px 150px;
+        border-radius: 70px;
+        font-size: 40px
+    }
 
-     #descriptionTwo {
-         font-size: 45px;
-         max-width: 100%;
-         margin-right: 15px
-     }
+    #links a {
+        font-size: 30px;
+    }
 
-     form {
-         width: 100%;
-     }
+    #second {
+        flex-direction: column;
+        width: auto;
+        flex-wrap: wrap;
+    }
 
-     form input {
-         width: 624px;
-         height: 100px;
-         margin-top: 24px
-     }
+    #containerForRectangleAndHeading {
+        margin-left: initial;
+    }
 
-     form input #email {
-         margin-top: 37px;
-         -webkit-text-fill-color: none;
-     }
+    #rectangle {
+        width: 150px;
+        height: 12px;
+    }
 
-     .inputBasicStyle {
-         padding-left: 65px;
-         background-size: 20px;
-         background-position: 12px;
-         font-size: 45px;
-         color: #FFFF;
-     }
+    h2 {
+        font-size: 60px;
+        width: 100%;
+        margin-right: 15px;
+    }
 
-     #email,
-     #username,
-     #password {
-         background-size: 60px;
-         width: 90%;
 
+    #descriptionTwo {
+        font-size: 45px;
+        max-width: 100%;
+        margin-right: 15px
+    }
 
-     }
+    form {
+        width: 100%;
+    }
 
+    form input {
+        width: 624px;
+        height: 100px;
+        margin-top: 24px
+    }
 
-     #termsOfServiceCheckbox {
-         height: 33px;
-         width: 33px;
+    form input #email {
+        margin-top: 37px;
+        -webkit-text-fill-color: none;
+    }
 
-     }
+    .inputBasicStyle {
+        padding-left: 65px;
+        background-size: 20px;
+        background-position: 12px;
+        font-size: 45px;
+        color: #FFFF;
+    }
 
-     #termsOfServiceDescription {
-         font-size: 35px;
-         margin-top: 20px;
-     }
+    #email,
+    #username,
+    #password {
+        background-size: 60px;
+        width: 90%;
 
-     #sign {
-         font-size: 60px;
-         border-radius: 50px;
-         margin-top: 56px;
 
-         padding: 50px 100px 101px;
-     }
+    }
 
-     #signInCTA {
-         font-size: 35px;
-         margin-right: 150px;
-     }
 
-     #email-validation-message,
-     #username-validation {
-         color: red;
-         font-size: 30px;
-         margin-top: 10px;
+    #termsOfServiceCheckbox {
+        height: 33px;
+        width: 33px;
 
-     }
+    }
 
-     #password-validation,
-     #passwordLength-validation,
-     #passwordUpperCase-validation {
-         color: red;
-         font-size: 30px;
-         margin-top: 10px;
-         margin-bottom: 0px;
-         margin-left: 20px;
-         display: list-item;
-         list-style: disc;
+    #termsOfServiceDescription {
+        font-size: 35px;
+        margin-top: 17px;
+        max-width: 90%;
+    }
 
-     }
- }
+    #sign {
+        font-size: 60px;
+        border-radius: 50px;
+        margin-top: 56px;
+        margin-left: 50px;
+        padding: 50px 100px 101px;
+    }
+
+    #signInCTA {
+        font-size: 35px;
+        margin-right: 150px;
+    }
+
+    #email-validation-message,
+    #username-validation {
+        color: red;
+        font-size: 30px;
+        margin-top: 10px;
+
+    }
+
+    #password-validation,
+    #passwordLength-validation,
+    #passwordUpperCase-validation {
+        color: red;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        display: list-item;
+        list-style: disc;
+    }
+
+    .validation-error {
+        border-color: red;
+    }
+}
