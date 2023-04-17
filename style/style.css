@@ -141,7 +141,7 @@ h1 {
     width: 52px;
     height: 6px;
     background: #F0C123;
-    margin-top: 127px;
+    margin-top: 63px;
 }
 
 
@@ -270,7 +270,7 @@ a {
 }
 
 #email-validation-message,
-#username-validation {
+#username-validation-message {
     color: red;
     font-size: 15px;
     margin-top: 10px;
@@ -438,7 +438,7 @@ a {
     }
 
     #email-validation-message,
-    #username-validation {
+    #username-validation-message {
         color: red;
         font-size: 30px;
         margin-top: 10px;
