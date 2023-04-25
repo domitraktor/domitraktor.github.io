@@ -34,6 +34,7 @@ export const validateEmail = (emailDOMElement) => {
             "#email-validation-message",
             emailDOMElement
         )
+        return true
     } else {
         cleanupPreviousValidationMsg(
             "#email-validation-message",
@@ -45,6 +46,7 @@ export const validateEmail = (emailDOMElement) => {
         paragraphAfterEmail.setAttribute("id", "email-validation-message")
 
         emailDOMElement.classList.add("validation-error")
+        return false
     }
 }
 
@@ -54,6 +56,7 @@ export const validateUsername = (usernameDOMElement) => {
             "#username-validation-message",
             usernameDOMElement
         )
+        return true
     } else {
         cleanupPreviousValidationMsg(
             "#username-validation-message",
@@ -71,6 +74,7 @@ export const validateUsername = (usernameDOMElement) => {
             "username-validation-message"
         )
         usernameDOMElement.classList.add("validation-error")
+        return false
     }
 }
 
@@ -126,12 +130,14 @@ export const validatePassword = (passwordDOMElement) => {
             "Password must contain at least one upper case letter"
         passwordDOMElement.insertAdjacentElement("afterend", upperCasePassword)
         upperCasePassword.setAttribute("id", "passwordUpperCase-validation")
+    }
 
-        if (numberOfErrorsForPassword === 0) {
-            passwordDOMElement.classList.remove("validation-error")
-        } else {
-            passwordDOMElement.classList.add("validation-error")
-        }
+    if (numberOfErrorsForPassword === 0) {
+        passwordDOMElement.classList.remove("validation-error")
+        return true
+    } else {
+        passwordDOMElement.classList.add("validation-error")
+        return false
     }
 }
 

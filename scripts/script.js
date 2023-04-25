@@ -17,12 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", (event) => {
         event.preventDefault()
 
-        validateEmail(emailDOMElement)
+        const isEmailValidationOkay = validateEmail(emailDOMElement)
+        const isUsernameValidationOkay = validateUsername(usernameDOMElement)
+        const isPasswordValidationOkay = validatePassword(passwordDOMElement)
+        const isCheckboxValidationOkay = validateCheckbox(
+            termsOfServiceCheckboxDOMElement
+        )
 
-        validateUsername(usernameDOMElement)
-
-        validatePassword(passwordDOMElement)
-
-        validateCheckbox(termsOfServiceCheckboxDOMElement)
+        if (
+            isEmailValidationOkay &&
+            isUsernameValidationOkay &&
+            isPasswordValidationOkay &&
+            isCheckboxValidationOkay
+        ) {
+            form.remove()
+        }
     })
 })
