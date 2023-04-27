@@ -31,6 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
             isCheckboxValidationOkay
         ) {
             form.remove()
+            const descriptionBeforeForm = document.querySelector(
+                "#descriptionBeforeForm"
+            )
+            const successMessage = document.createElement("p")
+            successMessage.innerText =
+                "Thank you for signing up. Please check your email."
+            descriptionBeforeForm.insertAdjacentElement(
+                "afterend",
+                successMessage
+            )
+            successMessage.setAttribute("id", "successMeassage")
         }
     })
 })
