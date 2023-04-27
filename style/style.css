@@ -4,6 +4,7 @@ form-input {
 
 html {
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -119,6 +120,7 @@ h1 {
 #second {
     background-color: #171136;
     width: 44%;
+
 
 }
 
@@ -242,7 +244,7 @@ a {
     background: #E34693;
     border: none;
     border-radius: 20px;
-    margin-top: 56px;
+    margin-top: 25px;
     padding: 35px 140px;
 
 }
@@ -297,9 +299,15 @@ a {
 
 #successMeassage {
     color: #6952EE;
-    font-size: 20px;
+    font-size: 40px;
 }
 
+#checkbox-validation {
+    color: red;
+    font-size: 15px;
+    margin: 0px;
+
+}
 
 
 @media screen and (max-width: 1175px) {
@@ -433,7 +441,7 @@ a {
         font-size: 60px;
         border-radius: 50px;
         margin-top: 56px;
-        margin-left: 50px;
+        margin-left: 80px;
         padding: 50px 100px 101px;
     }
 
@@ -445,7 +453,7 @@ a {
     #email-validation-message,
     #username-validation-message {
         color: red;
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 10px;
 
     }
@@ -454,7 +462,7 @@ a {
     #passwordLength-validation,
     #passwordUpperCase-validation {
         color: red;
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 10px;
         margin-bottom: 0px;
         margin-left: 20px;
@@ -469,5 +477,11 @@ a {
     #successMeassage {
         color: #6952EE;
         font-size: 20px;
+    }
+
+    #checkbox-validation {
+        color: red;
+        font-size: 40px;
+        margin: 0px 1px;
     }
 }

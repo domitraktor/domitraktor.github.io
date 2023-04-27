@@ -143,8 +143,21 @@ export const validatePassword = (passwordDOMElement) => {
 
 export const validateCheckbox = (termsOfServiceCheckboxDOMElement) => {
     if (termsOfServiceCheckboxDOMElement.checked) {
+        cleanupPreviousValidationMsg(
+            "#checkbox-validation",
+            termsOfServiceCheckboxDOMElement
+        )
         return true
     } else {
+        cleanupPreviousValidationMsg(
+            "#checkbox-validation",
+            termsOfServiceCheckboxDOMElement
+        )
+        const termofService = document.querySelector("#termsOfServiceContainer")
+        const CheckboxDupa = document.createElement("p")
+        CheckboxDupa.innerText = "Please accept terms"
+        termofService.insertAdjacentElement("afterend", CheckboxDupa)
+        CheckboxDupa.setAttribute("id", "checkbox-validation")
         return false
     }
 }
